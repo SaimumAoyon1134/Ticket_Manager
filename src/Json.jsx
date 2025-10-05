@@ -18,7 +18,7 @@ export default function Json() {
     
     taskStatusList.find(t => t.id === ticket.id) && toast.error(`This ticket is already in Task Status!`)
     if(taskStatusList.find(t => t.id === ticket.id)) return;
-    
+
     let newPro = pro +1;
     setPro(newPro);
 
@@ -127,7 +127,7 @@ export default function Json() {
 
         @media (max-width: 768px) {
         .json-container {
-            grid-template-columns: 2fr 1fr;
+            grid-template-columns: 1fr;
           }
           .tickets-grid {
             grid-template-columns: 1fr; 
