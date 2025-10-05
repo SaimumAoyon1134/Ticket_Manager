@@ -21,7 +21,7 @@ export default function Nav() {
         <button>+ New Ticket</button>
       </div>
 
-      <style jsx>{`
+      <style >{`
         .nav-links {
           display: grid;
           grid-template-columns: repeat(7, auto);

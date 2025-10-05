@@ -1,9 +1,11 @@
 import Vector1 from './assets/vector1.png';
 import Vector2 from './assets/vector2.png';
 
-export default function Card() {
+export default function Card({pro, resolved}) {
   return (
+    
     <div style={{ display: "flex", justifyContent: "space-between", marginTop: "50px" }}>
+     
       <div
   style={{
     width: "45%",
@@ -55,7 +57,7 @@ export default function Card() {
 
  
   In Progress
-  <p style={{ fontSize: "2rem" }}>0</p>
+  <p style={{ fontSize: "2rem" }}>{pro}</p>
 </div>
  <div
   style={{
@@ -108,7 +110,7 @@ export default function Card() {
 
  
    Resolved
-  <p style={{ fontSize: "2rem" }}>0</p>
+  <p style={{ fontSize: "2rem" }}>{resolved}</p>
 </div>
 
 

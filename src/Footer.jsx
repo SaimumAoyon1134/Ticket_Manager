@@ -23,9 +23,9 @@ export default function Footer() {
         <div>
           <p>CS — Ticket System</p>
           <p style={linkStyle}>
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
-          </p>
-        </div>
+           Customer Tickets start in the left column.When clicked, a ticket moves to the Task Status column and shows a toast.When clicked again in Task Status, it moves to Resolved Tasks.
+   </p>
+</div>
 
         <div>
           <p>Company</p>
@@ -60,7 +60,7 @@ export default function Footer() {
       &copy; {new Date().getFullYear()} CS — Ticket System. All rights reserved.
 
      
-      <style jsx>{`
+      <style >{`
         .footer-grid {
           display: grid;
           grid-template-columns: repeat(5, 1fr);

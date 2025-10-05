@@ -4,33 +4,48 @@ import { useState } from 'react';
 import JsonItemInStatus from './JsonItemInStatus';
 import Resolved from './Resolved'
 import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';;
+import 'react-toastify/dist/ReactToastify.css';
+import Card from './Card';
+;
 
 export default function Json() {
   const [ticketsList, setTicketsList] = useState(tickets)  
   const [taskStatusList, setTaskStatusList] = useState([])
+  const [pro,setPro] = useState(0);
+  const [resolved,setResolved] = useState(0);
 
   const handleTicketClick = (ticket) => {
     
-    setTicketsList(prev => prev.filter(t => t.id !== ticket.id))
+    taskStatusList.find(t => t.id === ticket.id) && toast.error(`This ticket is already in Task Status!`)
+    if(taskStatusList.find(t => t.id === ticket.id)) return;
+    
+    let newPro = pro +1;
+    setPro(newPro);
 
     setTaskStatusList(prev => [...prev, ticket])
-    toast.success(`Ticket "${ticket.title}" Completed!`)
+    toast.success(`In Progress!`)
   }
    
   const [taskStatusListResolved, setTaskStatusListResolved] = useState([])
 
   const handleTicketStatus = (ticket) => {
-    
+    setTicketsList(prev => prev.filter(t => t.id !== ticket.id))
+    let newResolved = resolved +1;
+    setResolved(newResolved);
+
+     let newPro = pro -1;
+    setPro(newPro);
+
     setTaskStatusList(prev => prev.filter(t => t.id !== ticket.id))
 
     setTaskStatusListResolved(prev => [...prev, ticket])
-    toast.success(`Ticket "${ticket.title}" Resolved!`)
+    toast.success(`Completed!`)
     
   }
  
   return (
     <>
+        <Card pro={pro} resolved={resolved}></Card>
         <ToastContainer position="top-right" autoClose={1000} />
          <div className="json-container">
       <div className="tickets-column">
