@@ -1,0 +1,137 @@
+[
+  {
+    "id": 1,
+    "title": "Login Issue",
+    "description": "User unable to log in to account",
+    "customer": "John Doe",
+    "priority": "High",
+    "status": "Open",
+    "createdAt": "2025-10-04"
+  },
+  {
+    "id": 2,
+    "title": "Payment Failure",
+    "description": "Payment not going through on checkout",
+    "customer": "Sarah Khan",
+    "priority": "Critical",
+    "status": "In Progress",
+    "createdAt": "2025-10-03"
+  },
+  {
+    "id": 3,
+    "title": "Feature Request",
+    "description": "Request to add dark mode feature",
+    "customer": "Ali Ahmed",
+    "priority": "Low",
+    "status": "Open",
+    "createdAt": "2025-10-02"
+  },
+  {
+    "id": 4,
+    "title": "Email Not Sending",
+    "description": "Customer emails fail to deliver",
+    "customer": "Emma Brown",
+    "priority": "Medium",
+    "status": "Open",
+    "createdAt": "2025-09-30"
+  },
+  {
+    "id": 5,
+    "title": "Page Load Slow",
+    "description": "Dashboard taking too long to load",
+    "customer": "Michael Smith",
+    "priority": "High",
+    "status": "In Progress",
+    "createdAt": "2025-10-01"
+  },
+  {
+    "id": 6,
+    "title": "Bug in Signup",
+    "description": "Error on clicking signup button",
+    "customer": "Sophia Rahman",
+    "priority": "Medium",
+    "status": "Open",
+    "createdAt": "2025-10-03"
+  },
+  {
+    "id": 7,
+    "title": "Refund Request",
+    "description": "Customer requesting refund for order #459",
+    "customer": "David Lee",
+    "priority": "High",
+    "status": "Open",
+    "createdAt": "2025-09-29"
+  },
+  {
+    "id": 8,
+    "title": "Mobile App Crash",
+    "description": "App crashes when clicking settings",
+    "customer": "Noor Hasan",
+    "priority": "Critical",
+    "status": "Open",
+    "createdAt": "2025-10-04"
+  },
+  {
+    "id": 9,
+    "title": "Password Reset",
+    "description": "User unable to reset password",
+    "customer": "Olivia White",
+    "priority": "Low",
+    "status": "Open",
+    "createdAt": "2025-09-28"
+  },
+  {
+    "id": 10,
+    "title": "UI Misalignment",
+    "description": "Buttons overlap on small screens",
+    "customer": "James Parker",
+    "priority": "Low",
+    "status": "Open",
+    "createdAt": "2025-10-02"
+  },
+  {
+    "id": 11,
+    "title": "Notification Delay",
+    "description": "Notifications not received in time",
+    "customer": "Aisha Begum",
+    "priority": "Medium",
+    "status": "In Progress",
+    "createdAt": "2025-10-03"
+  },
+  {
+    "id": 12,
+    "title": "Account Locked",
+    "description": "Too many failed login attempts",
+    "customer": "Ethan Davis",
+    "priority": "High",
+    "status": "Open",
+    "createdAt": "2025-10-01"
+  },
+  {
+    "id": 13,
+    "title": "Report Generation",
+    "description": "Reports not generating properly",
+    "customer": "Maria Lopez",
+    "priority": "Medium",
+    "status": "Open",
+    "createdAt": "2025-09-30"
+  },
+  {
+    "id": 14,
+    "title": "Chatbot Error",
+    "description": "Chatbot not responding to user queries",
+    "customer": "Hasan Ali",
+    "priority": "High",
+    "status": "In Progress",
+    "createdAt": "2025-10-02"
+  },
+  {
+    "id": 15,
+    "title": "Subscription Cancel",
+    "description": "Unable to cancel subscription",
+    "customer": "Laura Chen",
+    "priority": "Critical",
+    "status": "Open",
+    "createdAt": "2025-10-04"
+  }
+]
