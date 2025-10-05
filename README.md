@@ -32,9 +32,10 @@ function Parent() {
 }
 ```
 **State**
-	•	State is local data managed within a component.
-	•	State is mutable using setState (class component) or useState (functional component).
-	•	Used to track dynamic data that changes over time.
+- State is local data managed within a component.
+-	State is mutable using setState (class component) or useState (functional component).
+-	Used to track dynamic data that changes over time. 
+
 
 
 ```jsx
@@ -54,7 +55,7 @@ function Counter() {
 
 # What is the useState hook, and how does it work?
 
-**What is useState?**
+
 `useState` is a React Hook that allows **functional components** to have state.  
 It lets **store and update data** that affects the component's rendering.
 
@@ -74,10 +75,10 @@ function Counter() {
   );
 }
 ```
-## How can you share state between components in React?
+## How can share state between components in React?
 
 
-## Overview
+
 In React, state is local to a component. To **share state between components**, I can lift the state up to a **common parent** or use **state management solutions**.
 
 
