@@ -14,8 +14,10 @@ function App() {
   return (
     <>
   
-     
+      <Navbar></Navbar>
+      <Card></Card>
       <Json></Json>
+      <Footer></Footer>
      
 
     </>

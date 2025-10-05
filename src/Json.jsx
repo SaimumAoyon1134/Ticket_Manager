@@ -2,7 +2,9 @@ import tickets from '../tickets.json'
 import JsonItem from './JsonItem'
 import { useState } from 'react';
 import JsonItemInStatus from './JsonItemInStatus';
-import Resolved from './Resolved';
+import Resolved from './Resolved'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';;
 
 export default function Json() {
   const [ticketsList, setTicketsList] = useState(tickets)  
@@ -13,6 +15,7 @@ export default function Json() {
     setTicketsList(prev => prev.filter(t => t.id !== ticket.id))
 
     setTaskStatusList(prev => [...prev, ticket])
+    toast.success(`Ticket "${ticket.title}" Completed!`)
   }
    
   const [taskStatusListResolved, setTaskStatusListResolved] = useState([])
@@ -22,10 +25,14 @@ export default function Json() {
     setTaskStatusList(prev => prev.filter(t => t.id !== ticket.id))
 
     setTaskStatusListResolved(prev => [...prev, ticket])
+    toast.success(`Ticket "${ticket.title}" Resolved!`)
     
   }
+ 
   return (
-    <div className="json-container">
+    <>
+        <ToastContainer position="top-right" autoClose={1000} />
+         <div className="json-container">
       <div className="tickets-column">
         Customer Tickets
         <div className="tickets-grid">
@@ -113,5 +120,7 @@ export default function Json() {
         }
       `}</style>
     </div>
+    </>
+   
   )
 }

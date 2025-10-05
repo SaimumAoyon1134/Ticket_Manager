@@ -15,11 +15,11 @@ export default function Resolved({ ticket, onClick }) {
       <div style={{ 
         display: "flex", 
         justifyContent: "space-between", 
-        alignItems: "center", 
+        alignItems: "left", 
         flexDirection:"column"
       }}>
           <p style={{
-            color:"black",
+            color:"gray",
           }}>{ticket.title}</p>
         
         </div>
